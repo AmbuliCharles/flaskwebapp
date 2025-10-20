@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Balozi Electricals and General Supplies Ltd</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+  #scrollTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  z-index: 999;
+  border-radius: 50%;
+  padding: 10px 15px;
+  font-size: 18px;
+}
+
+.whatsapp-contact {
+    background-color: #25D366;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+
+.whatsapp-contact a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.whatsapp-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+</style>
+</head>
+<body style="background-color: lightgray;">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Balozi Electricals and General Supplies</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero d-flex align-items-center justify-content-center text-white text-center">
+    <div class="col-md-8">
+      <h1 style="padding-top: 20px;">About Us</h1>
+      <p style="color: darkblue; text-align: justify; padding: 20px;">Balozi Electrical and General Supplies is a company founded on 2002 and has been operational since then, bringing several projects to completion to our customers' satisfaction. It was founded by Mr. Fanuel Ayuyo Ambuli who has had extensive 
+        experience in the construction industry for over 30 years. We specialize in a wide range of construction services, including project management, general contracting, office partitioning design, gypsum installation, home interior design, painting services, renovations and remodeling, 
+        floor installation, extensions and additions, plumbing and electrical installations, and finishing services. What started as a small venture has now grown into a reputable construction company known for its commitment to quality, integrity, and customer satisfaction.
+        Over the years we have worked with several highly reputable institutions such as Population Services Kenya, Troicare, Population Services International, Atlantis, Electrical installations and maintenance at industrial go-downs along Mombasa road and church based organisations such as Deliverance Church Karen
+         just to mention a few.
+      </p>
+      <a href="#services" class="btn btn-primary">Explore Services Offered</a>
+    </div>
+  </header>
+
+  <!-- Services Section -->
+  <section id="services" class="container py-5">
+    <div class="row text-center">
+      <div class="col-md-12">
+        <h3>1. Project Management</h3>
+        <h6 style="padding-top: 20px;padding-bottom: 20px;">From Vision to Completion—We Handle Every Detail</h6>
+        <img src="{{ url_for('static', filename='images/Basics-of-House-Construction.jpg') }}" alt="Construction worker in a yellow hard hat and safety vest operating machinery at a residential building site with partially built wooden frames under a clear sky, conveying a focused and industrious atmosphere" width="600" height="400">
+        <p style="padding-top: 10px;">At Balozi Electricals and General Supplies Ltd, we don’t just manage construction projects—we orchestrate them with precision, transparency, and care. Our comprehensive project management services ensure your build runs smoothly and cost efficiently from start to finish.</p>
+         <h5 style="color: red; font-weight: bold;padding-bottom: 20px; padding-top: 20px;">What we Deliver</h5>
+            <ul style="text-align: center; display: inline-block; list-style-type: none; padding: 0;">
+              <li><strong>Strategic Planning</strong> – We lay the groundwork with clear, evidence-based plans tailored to your goals.</li>
+  <li><strong>Budgeting & Cost Control</strong> – Transparent estimates and forensic oversight ensure every shilling is accounted for.</li>
+  <li><strong>Scheduling & Coordination</strong> – We synchronize contractors, suppliers, and timelines like clockwork.</li>
+  <li><strong>Quality Assurance</strong> – Every material inspected. Every step verified. We build with proof, not promises.</li>
+  <li><strong>Regulatory Compliance</strong> – Your project stays aligned with all specifications, codes, and deadlines.</li>
+</ul>
+
+      </div>
+      <div class="col-md-12">
+        <h3>2. General Contracting</h3>
+        <h6 style="padding-top: 20px;padding-bottom: 20px;">Full-Scope Management. Zero Guesswork.</h6>
+        <img src="{{ url_for('static', filename='images/General_Contracting_you_can_Trust.jpg') }}" alt="General Contracting" width="600" height="400">
+        <p style="padding-top: 10px;">When you choose us as your general contractor, you're choosing a partner who takes full command of your construction journey. We handle every aspect including sourcing quality materials with the precision of a forensic analyst and the care of a master craftsman.</p>
+         <h5 style="color: red; font-weight: bold;padding-bottom: 10px;">What we Deliver</h6>
+          <ul style="text-align: center; display: inline-block; list-style-type: none; padding: 0;">
+  <li><strong>End-to-End Oversight</strong> – We manage the entire build so you don’t have to.</li>
+  <li><strong>Material Procurement</strong> – Only verified, high-quality materials make it to your site.</li>
+  <li><strong>Safety & Efficiency</strong> – We build with discipline, speed, and zero compromise.</li>
+  <li><strong>Uncompromising Standards</strong> – Every finish reflects our commitment to excellence.</li>
+</ul>
+          </p>
+      </div>
+      <div class="col-md-12">
+        <h3>3. Office Partitioning Design</h3>
+        <h6 style="padding-top: 20px;padding-bottom: 20px;">Transform Your Workspace with Precision</h6>
+        <img src="{{ url_for('static', filename='images/Office_partitioning_designs.jpg') }}" alt="Office Partitioning Design" width="600" height="400">
+        <p style="padding-top: 10px;">We believe your office should do more than house your team—it should inspire them. Our top-tier partitioning solutions combine functionality with aesthetic finesse, helping you create a workspace that’s efficient, elegant, and tailored to your business needs.
+          Let us help you build a workspace that reflects your vision and elevates your team’s potential.
+        </p>
+        <h5 style="color:darkblue; font-weight: bold;padding-bottom: 10px;">Choose from a variety</h5>
+        <p>We use quality glass, gypsum, wood, and metal, to design and install custom partitions without compromising natural light and office airation. Whether you are revamping your office or setting up a new space, our tailored partitioning options ensure maximum use of space and design flexibility.</p>
+        <ul style="text-align: center; display: inline-block; list-style-type: none; padding: 0;">
+          <li><strong>Glass Partitions</strong></li>
+  <li><strong>Aluminium Partitions</strong></li>
+  <li><strong>Gypsum and PVC Partitions</strong></li>
+  <li><strong>Wooden Partitions</strong></li>
+  <li><strong>Acoustic suspended ceiling</strong></li>
+</ul>
+         <h5 style="color: red; font-weight: bold;padding-bottom: 10px;">What we Deliver</h6>
+          <ul style="text-align: center; display: inline-block; list-style-type: none; padding: 0;">
+  <li><strong>Custom Wall & Door Partitions</strong> – Choose from a wide range of high-quality materials and designs.</li>
+  <li><strong>Smart Space Planning</strong> – Optimize layout for productivity, privacy, and collaboration.</li>
+  <li><strong>Boardrooms, Meeting Rooms & Cubicles</strong> – Solutions crafted for every corner of your office.</li>
+  <li><strong>Enhanced Lighting & Elegance</strong> – We design spaces that feel open, modern, and inviting.</li>
+</ul>
+          </p>
+      </div>
+      <div class="col-md-12"> 
+        <h3>4. Gypsum Installation Services</h3>
+        <h6 style="padding-top: 20px;padding-bottom: 20px;">Elegant Finishes. Precision Craftsmanship.</h6>
+        <img src="{{ url_for('static', filename='images/Gypsum_installation_designs.jpg') }}" alt="Construction worker in a yellow hard hat and safety vest operating machinery at a residential building site with partially built wooden frames under a clear sky, conveying a focused and industrious atmosphere" width="600" height="400">
+        <p style="padding-top: 10px; padding-bottom: 10px;">Transform your interiors with our gypsum installation services—designed to elevate both residential and commercial spaces. Whether you're crafting sleek ceilings, stylish partitions, or custom wall features, we deliver flawless results with clean lines, durable materials, and a commitment to detail. Our team ensures every installation aligns with your vision, enhancing aesthetics while maintaining structural integrity.</p>
+          </p>
+      </div>
+      <div class="col-md-12">
+        <h3>5. Home Interior Design Services</h3>
+        <h6 style="padding-top: 20px;padding-bottom: 20px;">Crafted Spaces. Inspired Living.</h6>
+        <img src="{{ url_for('static', filename='images/Home_interior_design.png') }}" alt="Home Interior Design" width="600" height="400">
+        <p style="padding-top: 10px;">we specialize in transforming ordinary homes into extraordinary living spaces. Our gypsum ceiling installations bring architectural elegance to every room—whether it’s a cozy bedroom, a vibrant kitchen, or a sophisticated living area.
+          We don’t just decorate—we interpret your vision and bring it to life with precision, creativity, and care.
+          Our Residential Interior design Services include:<strong> Living Room Interior Design, Bedroom Interior Design, Kitchen Interior Design / Renovation and Custom Furniture & Decor</strong>
+        </p>
+        <h5 style="color: red; font-weight: bold;padding-bottom: 20px; padding-top: 20px;">What we Deliver</h6>
+                    <ul style="text-align: center; display: inline-block; list-style-type: none; padding: 0;">
+                      <li><strong>Gypsum Ceilings</strong> – Stunning designs that elevate your interiors with clean lines and modern flair.</li>
+    <li><strong>Kitchen, Living Room & Bedroom Styling</strong> – Functional layouts with a touch of luxury.</li>
+    <li><strong>Wall Enhancements</strong> – High-quality wallpapers and artistic effects that add depth and personality.</li>
+    <li><strong>Window Treatments</strong> – Custom blinds, curtains, and sheers for a refined finish.</li>
+    <li><strong>Flooring & Painting</strong> – From sleek installations to vibrant color schemes and special effects.</li>
+  </ul>
+</div>
+<div class="col-md-12">
+        <h3>6. Paint Services: Surface Finishes That Speak Your Style</h3>
+        <h6 style="padding-top: 20px;padding-bottom: 20px;">From Classic Elegance to Cutting-Edge Coatings</h6>
+        <img src="{{ url_for('static', filename='images/Painting_services.png') }}" alt="Paint job services" width="600" height="400">
+        <p style="padding-top: 10px;">we deliver finishes that do more than look good—they last. Whether you're drawn to timeless textures or intrigued by modern molecular coatings, our team brings the expertise to match your vision with durable, functional beauty.
+          We don’t just apply finishes—we craft surfaces that reflect your identity and elevate your environment.
+        </p>
+        <h5 style="color: red; font-weight: bold;padding-bottom: 10px;">What we Deliver</h6>
+                    <ul style="text-align: center; display: inline-block; list-style-type: none; padding: 0;">
+                      <li><strong>Traditional Finishes</strong> – Warm, familiar textures that evoke comfort and class.</li>
+    <li><strong>Advanced Coatings</strong> – Innovative solutions for high-performance surfaces.</li>
+    <li><strong>Custom Styling</strong> – Every finish tailored to your unique aesthetic and space.</li>
+    <li><strong>Durability & Functionality</strong> – Built to endure, designed to impress.</li>
+  </ul>
+
+</div>
+<div class="col-md-12">
+        <h3>7. Renovations & Remodeling</h3>
+        <h6 style="padding-top: 20px;padding-bottom: 20px;">Reimagining Spaces. Rebuilding Confidence.</h6>
+        <img src="{{ url_for('static', filename='images/renovation-remodeling-service2.webp') }}" alt="Paint job services" width="600" height="400">
+        <p style="padding-top: 20px; padding-bottom: 20px;">we handle renovation and remodeling projects of every scale—from subtle upgrades to full structural transformations. Whether you're refreshing a single room or reconfiguring an entire property, we refit existing spaces to match your evolving needs and aspirations.
+          We don’t just renovate—we restore purpose, beauty, and integrity to your space.
+        </p>
+        <h5 style="color: red; font-weight: bold;padding-bottom: 10px;">What we Offer</h6>
+                    <ul style="text-align: left; display: inline-block; list-style-type: none; padding: 0;">
+                      <li><strong>Interior & Exterior Renovation</strong> – Seamless upgrades that enhance both form and function.</li>
+    <li><strong>Structural Alterations</strong> – Safe, strategic modifications to improve layout and flow.</li>
+    <li><strong>Cosmetic Enhancements</strong> – Finishes that elevate aesthetics without compromising durability.</li>
+    <li><strong>Vision-Driven Execution</strong> – Every detail aligned with your goals, timeline, and budget.</li>
+  </ul>
+</div>
+<div class="col-md-12">
+        <h3>8. Floor Installation Services</h3>
+        <h6 style="padding-top: 20px;padding-bottom: 20px;">Precision. Durability. Beauty.</h6>
+        <img src="{{ url_for('static', filename='images/floor_installation.jpg') }}" alt="Floor Installation services" width="600" height="400">
+        <p style="padding-top: 20px; padding-bottom: 20px;"> we bring floors to life. Whether you're upgrading a cozy home or a bustling commercial space, our installation services deliver flawless results that combine style, strength, and sustainability.
+          With meticulous planning we tailor every installation to your vision. Let’s add beauty and comfort to your house—one step at a time.
+        </p>
+                <h6 style="color: red; font-weight: bold;padding-bottom: 10px;">Our aspects of Floor Installation Services</h6>
+                <ul style="text-align: left; display: inline-block; list-style-type: square; padding: 0;">
+    <li>We use long-lasting materials.</li>
+    <li>We provide fast, efficient installations.</li>
+    <li>Cost-effective solutions without hidden charges.</li>
+    <li>We handle residential and commercial flooring projects.</li>
+  </ul>
+
+        <h6 style="color: red; font-weight: bold;padding-bottom: 10px;">What we Offer</h6>
+                    <ul style="text-align: left; display: inline-block; list-style-type: none; padding: 0;">
+                      <li><strong>Tiles & Ceramic Flooring</strong> – Classic elegance with long-lasting performance.</li>
+    <li><strong>3D Epoxy Floors</strong> – Bold, immersive designs for modern interiors.</li>
+    <li><strong>Wood, Laminate & Parquet</strong> – Warm textures with timeless appeal.</li>
+    <li><strong>Carpets & Vinyl</strong> – Soft comfort and versatile styling.</li>
+    <li><strong>Sustainable Solutions</strong> – Eco-friendly materials that combine durability with design.</li>
+  </ul>
+</div>
+<div class="col-md-12">
+        <h3>9. Extensions & Addition</h3>
+        <h6 style="padding-top: 20px;padding-bottom: 20px;">More Space. Same Integrity.</h6>
+        <img src="{{ url_for('static', filename='images/Extensions_&_Additions.jpg') }}" alt="Extensions& Additions" width="600" height="400">
+        <p style="padding-top: 20px; padding-bottom: 20px;">When your lifestyle evolves, your space should too. At Interior Designers Kenya, we design and build seamless extensions and 
+          additions that blend effortlessly with your existing property. Whether it’s expanding a living area, adding a new wing, or creating outdoor structures, we ensure every detail 
+          is architecturally coherent and structurally sound.
+
+        </p>
+        <h6 style="color: red; font-weight: bold;padding-bottom: 10px;">What we Offer</h6>
+                    <ul style="text-align: left; display: inline-block; list-style-type: none; padding: 0;">
+                      <li><strong>Room Expansions</strong> – Extend your interiors without compromising flow or style.</li>
+    <li><strong>Outdoor Additions</strong> – Patios, balconies, and verandas built for comfort and durability.</li>
+    <li><strong>Structural Integration</strong> – Engineered to match your property’s foundation and design language.</li>
+    <li><strong>Custom Planning</strong> – Tailored layouts that reflect your needs, budget, and long-term goals.</li>
+  </ul>
+
+</div>
+<div class="col-md-12">
+        <h3>10. Plumbing & Electrical Installations</h3>
+        <h6 style="padding-top: 20px;padding-bottom: 20px;">Safe. Certified. Seamlessly Integrated.</h6>
+        <img src="{{ url_for('static', filename='images/Plumbing_&_Electrical_Installations.webp') }}" alt="Plumbing & Electrical Installations" width="600" height="400">
+        <p style="padding-top: 20px; padding-bottom: 20px;">
+          we deliver expert plumbing and electrical installations that meet the highest standards of safety and compliance. Whether you're outfitting a new build or upgrading existing systems,
+           our qualified technicians ensure every connection is secure, efficient, and regulation-approved
+        </p>
+        <h6 style="color: red; font-weight: bold;padding-bottom: 10px;">What we Offer</h6>
+                    <ul style="text-align: left; display: inline-block; list-style-type: none; padding: 0;">
+                      <li><strong>Full-System Installations</strong> – From water lines to lighting circuits, we handle it all.</li>
+    <li><strong>Residential & Commercial Projects</strong> – Scalable solutions tailored to your property type.</li>
+    <li><strong>Code-Compliant Workmanship</strong> – Every job meets local building and safety regulations.</li>
+    <li><strong>Smart Integration</strong> – Modern setups that support energy efficiency and future upgrades.</li>
+  </ul>
+</div>
+<div class="col-md-12">
+        <h3>11. Finishing Services</h3>
+        <h6 style="padding-top: 20px;padding-bottom: 20px;">From Rough Shell to Refined Space—We Finish What Others Start.</h6>
+        <img src="{{ url_for('static', filename='images/Finishing_Services.jpg') }}" alt="Finishing Services" width="600" height="400">
+        <p style="padding-top: 20px; padding-bottom: 20px;">We don’t just wrap up projects—we elevate them. Our finishing services transform
+           raw structures into polished, livable spaces with precision and artistry.
+           Whether it’s a residential retreat or a commercial masterpiece, we finish with integrity—ensuring every detail aligns with your vision
+            and our standards. Let’s turn your blueprint into a beautifully finished reality.</p>
+        <h6 style="color: red; font-weight: bold;padding-bottom: 10px;">What we Offer</h6>
+                    <ul style="text-align: left; display: inline-block; list-style-type: none; padding: 20px;">
+                       <li><strong>🧱 Plastering</strong> – Smooth, seamless surfaces ready for expression.</li>
+      <li><strong>🎨 Painting</strong> – Vibrant, durable finishes that reflect your style.</li>
+      <li><strong>🧩 Tiling</strong> – Precision-laid tiles for floors, walls, and accents.</li>
+      <li><strong>🪵 Flooring</strong> – From wood to vinyl, installed with forensic accuracy.</li>
+      <li><strong>🔨 Carpentry</strong> – Custom woodwork that adds structure, warmth, and function.</li>
+    </ul>
+</div>
+<h3>Other Building and Construction Types We Do</h3>
+<!-- 3 photos in a row -->
+ <div class="container mt-4">
+  <div class="row text-center">
+    <div class="col-md-4">
+        <p><h6 style="color: darkblue; font-weight: bold; padding-bottom: 10px;" >Residential Buildings, Individual Houses and Villas</h6></p>
+      <img src="{{ url_for('static', filename='images/Independent-house-vs-villa.jpg')}}" class="img-fluid" alt="Independent house vs villa">
+    </div>
+    <div class="col-md-4">
+        <p><h6 style="color: darkblue; font-weight: bold; padding-bottom: 10px;" >Apartment Complexes</h6></p>
+        <img src="{{ url_for('static', filename='images/Apartment_Complexes.jpg')}}" class="img-fluid" alt="Apartment Complexes">
+    </div>
+    <div class="col-md-4">
+        <p><h6 style="color: darkblue; font-weight: bold; padding-bottom: 10px;" >Townhouses and Gated Communities</h6></p>
+        <img src="{{ url_for('static', filename='images/Townhouses_and_Gated_Communities.webp')}}" class="img-fluid" alt="Townhouses and Gated Communities">
+    </div>
+  </div>
+
+  <div class="container mt-4">
+  <div class="row text-center">
+    <div class="col-md-6">
+        <p><h6 style="color: darkblue; font-weight: bold; padding-bottom: 10px;" >Factories and Manufacturing Plants</h6></p>
+      <img src="{{ url_for('static', filename='images/Factories_and_Manufacturing_Plants.webp')}}" class="img-fluid" alt="Factories and Manufacturing Plants">
+    </div>
+    <div class="col-md-6">
+        <p><h6 style="color: darkblue; font-weight: bold; padding-bottom: 10px;" >Storage Facilities</h6></p>
+        <img src="{{ url_for('static', filename='images/Storage_Facilities.webp')}}" class="img-fluid" alt="Storage Facilities">
+    </div>
+  </div>
+    <div class="col-md-12" style="padding-top: 20px; padding-bottom: 20px;">
+        <h3>Why Choose Balozi Electricals and General Supplies Ltd?</h3>
+        <ul style="text-align: left; display: inline-block; list-style-type: none; padding: 20;">
+          <li><strong>Expertise & Experience</strong> – A team of seasoned professionals dedicated to excellence.</li>
+          <li><strong>Client-Centric Approach</strong> – Your vision drives every decision we make.</li>
+          <li><strong>Quality Assurance</strong> – We use only the best materials and proven techniques.</li>
+          <li><strong>Transparent Communication</strong> – Stay informed and involved at every project stage.</li>
+          <li><strong>Comprehensive Services</strong> – From design to finishing, we handle it all under one roof.</li>
+        </ul>
+      </div>
+</div>
+<!--additional fields to use later
+     <div class="col-md-6">
+        <h3>3D Layout Planning</h3>
+        <p>Visualize before you build—evidence in pixels and perspective.</p>
+      </div>
+      <div class="col-md-6">
+        <h3>Flooring Solutions</h3>
+        <p>From terrazzo to vinyl, every step documented and certified.</p>
+      </div>    -->
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="bg-light py-5 text-center">
+    <h2>Recent Projects</h2>
+    <p>Each space tells a story—backed by photos.</p>
+    <p><h3 style="color: darkblue; font-weight: bold; padding-bottom: 10px;" >Home Remodelling</h3></p>
+
+    <!-- Add project cards here -->
+     <div class="container mt-4">
+  <div class="row text-center">
+    <div class="col-md-4">
+      <img src="{{ url_for('static', filename='images/project_1.jpg')}}" class="img-fluid" alt="House Remodelling">
+    </div>
+    <div class="col-md-4">
+        <img src="{{ url_for('static', filename='images/project_2.jpg')}}" class="img-fluid" alt="House Remodelling">
+    </div>
+    <div class="col-md-4">
+        <img src="{{ url_for('static', filename='images/project_7.jpg')}}" class="img-fluid" alt="House Remodelling">
+    </div>
+    <div class="col-md-4" style="padding-top: 20px;">
+      <img src="{{ url_for('static', filename='images/project_5.jpg')}}" class="img-fluid" alt="House Remodelling">
+    </div>
+    <div class="col-md-4" style="padding-top: 20px;">
+        <img src="{{ url_for('static', filename='images/project_6.jpg')}}" class="img-fluid" alt="House Remodelling">
+    </div>
+    <div class="col-md-4" style="padding-top: 20px;">
+        <img src="{{ url_for('static', filename='images/project_4.jpg')}}" class="img-fluid" alt="House Remodelling">
+    </div>
+    <div class="col-md-4" style="padding-top: 20px;">
+      <img src="{{ url_for('static', filename='images/project_8.jpg')}}" class="img-fluid" alt="House Remodelling">
+    </div>
+    <div class="col-md-4" style="padding-top: 20px;">
+        <img src="{{ url_for('static', filename='images/project_9.jpg')}}" class="img-fluid" alt="House Remodelling">
+    </div>
+    <div class="col-md-4" style="padding-top: 20px;">
+        <img src="{{ url_for('static', filename='images/project_10.jpg')}}" class="img-fluid" alt="House Remodelling">
+    </div>
+  </div>
+  <p><h3 style="color: darkblue; font-weight: bold; padding-bottom: 10px;" >Walldrobe Installations</h3></p>
+
+     <div class="container mt-4">
+  <div class="row text-center">
+    <div class="col-md-4">
+      <img src="{{ url_for('static', filename='images/project_11.jpg')}}" class="img-fluid" alt="Walldrobe Installation">
+    </div>
+    <div class="col-md-4">
+        <img src="{{ url_for('static', filename='images/project_12.jpg')}}" class="img-fluid" alt="Walldrobe Installation">
+    </div>
+    <div class="col-md-4">
+        <img src="{{ url_for('static', filename='images/project_13.jpg')}}" class="img-fluid" alt="Walldrobe Installation">
+    </div>
+    <p><h3 style="color: darkblue; font-weight: bold; padding: 20px;" >Industrial power Installations</h3></p>
+
+     <div class="container mt-4">
+  <div class="row text-center">
+    <div class="col-md-4">
+      <img src="{{ url_for('static', filename='images/project_3.jpg')}}" class="img-fluid" alt="Industrial Power Installations">
+    </div>
+    <div class="col-md-4">
+        <img src="{{ url_for('static', filename='images/project_14.jpg')}}" class="img-fluid" alt="Industrial Power Installations">
+    </div>
+    <div class="col-md-4" style="padding-top: 20px;">
+        <img src="{{ url_for('static', filename='images/project_15.jpg')}}" class="img-fluid" alt="Industrial Power Installations">
+    </div>
+    <div class="col-md-4" style="padding-top: 20px;">
+        <img src="{{ url_for('static', filename='images/project_16.jpg')}}" class="img-fluid" alt="Industrial Power Installations">
+    </div>
+    <div class="col-md-4" style="padding-top: 20px;">
+        <img src="{{ url_for('static', filename='images/project_17.jpg')}}" class="img-fluid" alt="Industrial Power Installations">
+    </div>
+    <div class="col-md-4" style="padding-top: 20px;">
+        <img src="{{ url_for('static', filename='images/project_18.jpg')}}" class="img-fluid" alt="Industrial Power Installations">
+    </div>
+    </div>
+    <p><h3 style="color: darkblue; font-weight: bold; padding: 20px;" >Home construction from the ground up (still ongoing)</h3></p>
+
+     <div class="container mt-4">
+  <div class="row text-center">
+    <div class="col-md-4">
+      <img src="{{ url_for('static', filename='images/project_19.jpg')}}" class="img-fluid" alt="Home construction from the ground up (still ongoing)">
+    </div>
+    <div class="col-md-4">
+        <img src="{{ url_for('static', filename='images/project_20.jpg')}}" class="img-fluid" alt="Home construction from the ground up (still ongoing)">
+    </div>
+    <div class="col-md-4" style="padding-top: 20px;">
+        <img src="{{ url_for('static', filename='images/project_21.jpg')}}" class="img-fluid" alt="Home construction from the ground up (still ongoing)">
+    </div>
+    <div class="col-md-4" style="padding: 20px;">
+        <img src="{{ url_for('static', filename='images/project_22.jpg')}}" class="img-fluid" alt="Home construction from the ground up (still ongoing)">
+    </div>
+    <div class="col-md-4" style="padding: 20px;">
+        <img src="{{ url_for('static', filename='images/project_23.jpg')}}" class="img-fluid" alt="Home construction from the ground up (still ongoing)">
+    </div>
+    <div class="col-md-4" style="padding: 20px;">
+        <img src="{{ url_for('static', filename='images/project_24.jpg')}}" class="img-fluid" alt="Home construction from the ground up (still ongoing)">
+    </div>
+    <div class="col-md-4" style="padding: 20px;">
+        <img src="{{ url_for('static', filename='images/project_25.jpg')}}" class="img-fluid" alt="Home construction from the ground up (still ongoing)">
+    </div>
+    <div class="col-md-4" style="padding: 20px;">
+        <img src="{{ url_for('static', filename='images/project_26.jpg')}}" class="img-fluid" alt="Home construction from the ground up (still ongoing)">
+    </div>
+    <div class="col-md-4" style="padding: 20px;">
+        <img src="{{ url_for('static', filename='images/project_26.jpg')}}" class="img-fluid" alt="Home construction from the ground up (still ongoing)">
+    </div>
+    </div>
+  </div>
+     </div>
+    </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container text-center py-5">
+    <h2>Ready to Build with us?</h2>
+    <p>Let us start your Project.</p>
+    <!--
+    <a href="mailto:ambulicharles@gmail.com" class="btn btn-success">Contact Us</a>
+  </section>
+-->
+  <!-- WhatsApp Contact Section -->
+<div class="whatsapp-contact">
+    <a href="https://wa.me/254719844944" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+        Chat with Fanuel Ayuyo - Construction Manager, Balozi Electricals and General Supplies
+    </a>
+</div>
+
+<div class="whatsapp-contact">
+    <a href="https://wa.me/254796824869" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+        Chat with Charles Ambuli - Balozi Electricals and General Supplies
+    </a>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<button onclick="scrollToTop()" id="scrollTopBtn" class="btn btn-primary">
+  ↑ Top
+</button>
+  </section>
+
+<!-- Footer section-->
+ <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    &copy; 2025 Balozi Electericals and General Supplies. All rights reserved.
+  </footer>
+<script>
+  // Show button when user scrolls down
+  window.onscroll = function() {
+    const btn = document.getElementById("scrollTopBtn");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+
+  // Scroll to top when button is clicked
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+</body>
+</html>
